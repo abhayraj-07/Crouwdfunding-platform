@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Crowdfunding Platform</h1>
+
+    <div>
+        <h2>Create Campaign</h2>
+        <input id="title" type="text" placeholder="Title" />
+        <input id="description" type="text" placeholder="Description" />
+        <input id="goal" type="number" placeholder="Goal (ETH)" />
+        <input id="duration" type="number" placeholder="Duration (seconds)" />
+        <button id="createCampaign">Create Campaign</button>
+    </div>
+
+    <div>
+        <h2>Campaigns</h2>
+        <div id="campaigns"></div>
+        <button id="refreshCampaigns">Refresh Campaigns</button>
+    </div>
+
+    <script>
+        const contractAddress = "0xYourContractAddressHere";
+        const contractABI = [
+            // Add your contract ABI here
+        ];
+
+        let web3, contract;
+
+        async function loadWeb3() {
+            // Same as Voting.html
+        }
+
+        async function loadContract() {
+            // Same as Voting.html
+        }
+
+        async function createCampaign() {
+            // Logic for creating campaigns
+        }
+
+        async function pledgeToCampaign(campaignId) {
+            // Logic for pledging to campaigns
+        }
+    </script>
+</body>
+</html>
